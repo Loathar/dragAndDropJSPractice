@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOL Stat viewer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="general.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-dark">
+    <header>
+      <nav class="text-light">NAV-BAR</nav>
+    </header>
+    <h1 class="heading-primary container">League of Legends - Item builder</h1>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          Column 1
+
+          <div>
+            <ul class="stat-list d-flex flex-wrap justify-content-between">
+              <!-- Javascript will dynamicaly generate these stats from JSON -->
+              <li>Attack Damage: <span class="ad-stat">360</span></li>
+              <li>Ability Power: <span class="ap-stat">0</span></li>
+              <li>Attack Range: <span class="ar-stat">38</span></li>
+              <li>Attack Speed: <span class="as-stat">0.76</span></li>
+              <li>Magic Res: <span class="mr-stat">30</span></li>
+              <li>Armor: <span class="armor-stat">0</span></li>
+              <li>Critical rating: <span class="crc-stat">40</span></li>
+              <li>Movement Speed: <span class="ms-stat">350</span></li>
+              <li>HP: <span class="hp-stat">580</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          Colum 2
+          <ul class="test-list"></ul>
+          <div class="champion-section container">
+            <h2 class="heading-tertiary champ-name">
+              Diana - Scorn of the moon
+            </h2>
+            <div class="champion container">
+              <img
+                class="img champ-img"
+                src="img/champions/Diana_27.jpg"
+                alt="Portrait of the league of legends champion Diana, with her sentinel skin"
+              />
+            </div>
+          </div>
+          <h2 class="text-light text-center mt-4">Equiped items</h2>
+          <div
+            class="items d-flex flex-row flex-wrap justify-content-around p-2"
+          >
+            <div class="item-slot inventory" id="slot1"></div>
+            <div class="item-slot inventory" id="slot2"></div>
+            <div class="item-slot inventory"></div>
+            <div class="item-slot inventory"></div>
+            <div class="item-slot inventory"></div>
+            <div class="item-slot inventory"></div>
+          </div>
+        </div>
+
+        <div class="col">
+          <h2 class="text-light">Inventory</h2>
+
+          <div
+            id="inventory"
+            class="items d-flex justify-content-around align-items-center flex-row flex-wrap p-2"
+          >
+            <div class="item-slot">
+              <div class="item-img">
+                <img
+                  src="img/items/3006.png"
+                  alt=""
+                  draggable="true"
+                  id="item1"
+                />
+              </div>
+            </div>
+
+            <div class="item-slot">
+              <div class="item-img">
+                <img
+                  src="img/items/3004.png"
+                  alt=""
+                  draggable="true"
+                  id="item2"
+                />
+              </div>
+            </div>
+
+            <div class="item-slot">
+              <div class="item-img">
+                <img
+                  src="img/items/3089.png"
+                  alt=""
+                  draggable="true"
+                  id="item3"
+                />
+              </div>
+            </div>
+
+            <div class="item-slot">
+              <div class="item-img">
+                <!-- <img
+                  src="img/items/3006.png"
+                  alt=""
+                  draggable="true"
+                  id="item"
+                /> -->
+              </div>
+            </div>
+
+            <div class="item-slot">
+              <div class="item-img">
+                <!-- <img
+                  src="img/items/3006.png"
+                  alt=""
+                  draggable="true"
+                  id="item"
+                /> -->
+              </div>
+            </div>
+
+            <div class="item-slot">
+              <div class="item-img">
+                <!-- <img
+                  src="img/items/3006.png"
+                  alt=""
+                  draggable="true"
+                  id="item"
+                /> -->
+              </div>
+            </div>
+
+            <div class="item-slot">
+              <div class="item-img">
+                <!-- <img
+                  src="img/items/3006.png"
+                  alt=""
+                  draggable="true"
+                  id="item"
+                /> -->
+              </div>
+            </div>
+
+            <div class="item-slot">
+              <div class="item-img">
+                <!-- <img
+                  src="img/items/3006.png"
+                  alt=""
+                  draggable="true"
+                  id="item"
+                /> -->
+              </div>
+            </div>
+
+            <div class="item-slot">
+              <div class="item-img">
+                <!-- <img
+                  src="img/items/3006.png"
+                  alt=""
+                  draggable="true"
+                  id="item"
+                /> -->
+              </div>
+            </div>
+
+            <div class="item-slot">
+              <div class="item-img">
+                <!-- <img
+                  src="img/items/3006.png"
+                  alt=""
+                  draggable="true"
+                  id="item"
+                /> -->
+              </div>
+            </div>
+
+            <div class="item-slot">
+              <div class="item-img">
+                <!-- <img
+                  src="img/items/3006.png"
+                  alt=""
+                  draggable="true"
+                  id="item"
+                /> -->
+              </div>
+            </div>
+
+            <div class="item-slot">
+              <div class="item-img">
+                <!-- <img
+                  src="img/items/3006.png"
+                  alt=""
+                  draggable="true"
+                  id="item"
+                /> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="test-list">hei på deg</div>
+    </div>
+    <script src="app.js"></script>
+    <script src="championStats.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

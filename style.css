@@ -1,0 +1,113 @@
+/**********************************
+
+WHITE SPACE SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+**********************************/
+
+/* .title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4.8rem;
+} */
+
+/* .champion-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3.2rem;
+
+  justify-items: center;
+  align-items: center;
+} */
+/* .stat-block {
+  grid-column: 1 / 1;
+  grid-row: 2 / 3;
+} */
+
+.stat-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-around;
+  gap: 1.2rem;
+  font-size: 2.2rem;
+  color: #89dfe9;
+}
+
+.stat-list span {
+  color: #c2255c;
+}
+/* .champ-name {
+  grid-column: 2 / 3;
+} */
+/* .champion {
+  display: flex;
+  justify-content: center;
+  margin-top: 4.8rem;
+  width: 30%;
+  grid-column: 2 / 3;
+} */
+.item-selector {
+  background-color: #023237;
+  width: 36rem;
+  overflow: 0;
+}
+/* .item-bag {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+/* .item-bag .item-img {
+  flex: 1;
+  margin: 0.1rem;
+  cursor: move;
+} */
+.items {
+  width: 100%;
+  /* display: flex;
+  justify-content: space-around; */
+
+  background-color: #c2255c;
+}
+/* .item-grid {
+  margin-top: 4.8rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 1.2rem;
+  row-gap: 1.2rem;
+  align-items: center;
+  justify-items: center;
+  justify-self: center;
+} */
+
+/* .item-grid-selection {
+  margin-top: 4.8rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 1.2rem;
+  row-gap: 1.2rem;
+  align-items: center;
+  justify-items: center;
+  justify-self: center;
+} */
+.item-slot {
+  background-color: #123c42;
+  /* display: flex;
+  justify-content: center; */
+  border: solid 2px #89dfe9;
+  width: 6.5rem;
+  height: 6.5rem;
+}
+
+.item-img {
+  width: 70%;
+  height: 70%;
+  display: inline-block;
+}
